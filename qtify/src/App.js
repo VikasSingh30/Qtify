@@ -112,9 +112,9 @@ function App() {
       <Navbar />
       <Hero />
       <div className={styles.sectionWrapper}>
-      <Section type='album' title='Top Albums' data={topAlbumSongs}/>
+      {/* <Section type='album' title='Top Albums' data={topAlbumSongs}/>
       <Section type='album' title='New Albums' data={newAlbumSongs}/>
-      <FilterSection  type='song' title='Songs' value={value} filteredData={filteredData} handleChangeIndex={handleChangeIndex}/>
+      <FilterSection  type='song' title='Songs' value={value} filteredData={filteredData} handleChangeIndex={handleChangeIndex}/> */}
       </div>
     </div>
   );
