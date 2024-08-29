@@ -17,6 +17,16 @@ const Section=({type,title,data,toggle=true})=> {
     const handleToggle=()=>{
         setCarouselToggle(!carouselToggle);
     }
+ // Ensure 'data' is an array; default to an empty array if not
+    if (!Array.isArray(data) || data.length === 0) {
+            return (
+            <div className={styles.sectionTop}>
+                <h3>{title}</h3>
+                <div>No items to display</div>
+            </div>
+        );
+    }
+    
 
   return (
     <div>
